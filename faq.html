@@ -19,7 +19,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="ESGF Video Tutorials" href="videos.html" />
+    <link rel="next" title="Metagrid (Beta): Introduction/FAQ" href="metagrid.html" />
     <link rel="prev" title="User Tutorials" href="user_guide.html" /> 
 </head>
 
@@ -89,7 +89,6 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#esgf-wget">ESGF Wget</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#is-there-any-easy-way-to-generate-wget-scripts-for-downloading-lots-of-model-data-only-during-a-certain-period-such-as-1950-2000">Is there any easy way to generate wget scripts for downloading lots of model data only during a certain period, such as 1950-2000?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id15">Is there any easy way to generate wget scripts for downloading lots of model data only during a certain period, such as 1950-2000?</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#issues-with-script-generation">Issues with Script Generation</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#i-get-the-error-request-uri-too-large">I get the error: “Request-URI Too Large”</a></li>
 </ul>
@@ -182,6 +181,7 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="metagrid.html">Metagrid (Beta): Introduction/FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="videos.html">ESGF Video Tutorials</a></li>
 </ul>
 
@@ -1214,12 +1214,7 @@ The subject should be blank. The body should contain only the following:</p>
 <h2>ESGF Wget<a class="headerlink" href="#esgf-wget" title="Permalink to this headline">¶</a></h2>
 <section id="is-there-any-easy-way-to-generate-wget-scripts-for-downloading-lots-of-model-data-only-during-a-certain-period-such-as-1950-2000">
 <h3>Is there any easy way to generate wget scripts for downloading lots of model data only during a certain period, such as 1950-2000?<a class="headerlink" href="#is-there-any-easy-way-to-generate-wget-scripts-for-downloading-lots-of-model-data-only-during-a-certain-period-such-as-1950-2000" title="Permalink to this headline">¶</a></h3>
-<p>Unfortunately it is not possible to generate wget scripts for a certain period. You can only filter the datasets. For the files, you would need
-to remove those you don’t need from the wget script. See the <a class="reference external" href="https://esgf.github.io/esgf-user-support/user_guide.html#wget-scripting">Wget scripting</a>  information in the <a class="reference external" href="https://esgf.github.io/esgf-user-support/user_guide.html#the-esgf-search-restful-api">RESTful API</a> section in the tutorial.</p>
-</section>
-<section id="id15">
-<h3>Is there any easy way to generate wget scripts for downloading lots of model data only during a certain period, such as 1950-2000?<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
-<p>Unfortunately it is not possible to generate wget scripts for a certain period. You can only filter the datasets. For the files, you would need
+<p>Unfortunately, it is not possible to generate wget scripts for a certain period. You can only filter the datasets. For the files, you would need
 to remove those you don’t need from the wget script. See the <a class="reference external" href="https://esgf.github.io/esgf-user-support/user_guide.html#wget-scripting">Wget scripting</a>  information in the <a class="reference external" href="https://esgf.github.io/esgf-user-support/user_guide.html#the-esgf-search-restful-api">RESTful API</a> section in the tutorial.</p>
 </section>
 <section id="issues-with-script-generation">
@@ -1254,7 +1249,7 @@ to remove those you don’t need from the wget script. See the <a class="referen
 <h3>General Wget Runtime Issues<a class="headerlink" href="#general-wget-runtime-issues" title="Permalink to this headline">¶</a></h3>
 <section id="do-i-need-to-use-my-username-password">
 <h4>Do I need to use my username / password?<a class="headerlink" href="#do-i-need-to-use-my-username-password" title="Permalink to this headline">¶</a></h4>
-<p>If you are trying to download unrestricted datasets with Wget, eg, CMIP3-6, obs4MIPs, input4MIPs, E3SM, then the answer is No: username / password are not required.  However you need to instruct the Wget script to bypass the login prompt using the option -s.  When using this method for download, ensure you are not using additional options, eg. -s and -H should never be combined</p>
+<p>If you are trying to download unrestricted datasets with Wget, eg, CMIP3-6, obs4MIPs, input4MIPs, or E3SM, the username / password are not required.  However you need to instruct the Wget script to bypass the login prompt using the option -s.  When using this method for download, ensure you are not using additional options, eg. -s and -H should never be combined</p>
 <blockquote>
 <div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ bash wget-xxx.sh -s
 </pre></div>
@@ -1505,7 +1500,7 @@ Certificate could not be retrieved
 </dl>
 </li>
 <li><dl>
-<dt>Solution 5</dt><dd><p>If you are trying to download unrestricted datasets with Wget, eg, CMIP3-6, obs4MIPs, input4MIPs, E3SM, then the answer is No: username / password are not required.  However you need to instruct the Wget script to bypass the login prompt using the option -s.  When using this method for download, ensure you are not using additional options, eg. -s and -H should never be combined</p>
+<dt>Solution 5</dt><dd><p>If you are trying to download unrestricted datasets with Wget, eg, CMIP3-6, obs4MIPs, input4MIPs, E3SM, then the username / password are not required.  However you need to instruct the Wget script to bypass the login prompt using the option -s.  When using this method for download, ensure you are not using additional options, eg. -s and -H should never be combined</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ bash wget-xxx.sh -s
 </pre></div>
 </div>
@@ -1647,7 +1642,7 @@ Certificate could not be retrieved
 <p>One possible reason for this error is a missing membership in a data access control group. In debug mode, the script additionally throws the error message “403 Forbidden” in this case.</p>
 <ul class="simple">
 <li><dl class="simple">
-<dt>Solution</dt><dd><p>Join a matching <a href="#id18"><span class="problematic" id="id19">:ref:`data access control group &lt;data_access_groups&gt;`_</span></a>.</p>
+<dt>Solution</dt><dd><p>Join a matching <a href="#id15"><span class="problematic" id="id16">:ref:`data access control group &lt;data_access_groups&gt;`_</span></a>.</p>
 </dd>
 </dl>
 </li>
@@ -1691,8 +1686,14 @@ Certificate could not be retrieved
 <span class="n">done</span>
 </pre></div>
 </div>
+<ul class="simple">
+<li><p>Before considering any of the Solutions below, ensure that the data you are trying to download is from a restricted project, meaning that a login is required. If you are trying to download unrestricted datasets with Wget, eg, CMIP3-6, obs4MIPs, input4MIPs, E3SM, then the username / password are not required.  However you need to instruct the Wget script to bypass the login prompt using the option -s.</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ bash wget-xxx.sh -s
+</pre></div>
+</div>
+<p>When using this dowloading method, ensure you are not using additional options eg. -s and -H should never be combined.</p>
 <ul>
-<li><p>Before considering any of the Solutions below, ensure that the data you are trying to download is from a restricted project, meaning that a login is required, if not use the -s option (see above). When using this method for download, ensure you are not using additional options eg. -s and -H should never be combined</p></li>
 <li><dl>
 <dt>Solution 1</dt><dd><p>The user name alone is not sufficient. Enter your complete, correctly spelled OpenID behind</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Enter</span> <span class="n">your</span> <span class="n">openid</span> <span class="p">:</span>
@@ -1725,14 +1726,6 @@ Certificate could not be retrieved
 <dt>Solution 6</dt><dd><p>The data node is online, but the local operating system is outdated and does not recognize the data nodes’s web certificate when trying to establish a secure connection via wget.  In this case, upgrade the local operating system, try a different client system.  This scenario is revealed if running the script in debug mode (-d).
 The following workaround using the -i option has shown to work when using -H:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">wget</span><span class="o">-</span><span class="n">XXXXXX</span> <span class="o">-</span><span class="n">H</span> <span class="o">-</span><span class="n">i</span>
-</pre></div>
-</div>
-</dd>
-</dl>
-</li>
-<li><dl>
-<dt>Solution 7</dt><dd><p>If you are trying to download unrestricted datasets with Wget, eg, CMIP3-6, obs4MIPs, input4MIPs, E3SM, then the answer is No: username / password are not required.  However you need to instruct the Wget script to bypass the login prompt using the option -s.  When using this method for download, ensure you are not using additional options, eg. -s and -H should never be combined</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ bash wget-xxx.sh -s
 </pre></div>
 </div>
 </dd>
@@ -2209,34 +2202,29 @@ See tutorial <a class="reference internal" href="user_guide.html#forgot-password
 </dl>
 </li>
 <li><dl class="simple">
-<dt>Solution 2</dt><dd><p>Make sure the checkbox “Search Local Node Only” is not checked. Otherwise only data nodes locally connected with the portal you use are searched instead of a worldwide search.</p>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>Solution 3</dt><dd><p>If you need CMIP5 data, enable the checkbox “Show All Replicas”. The most important part of the CMIP5 data, the output1 data, have been replicated. Replicas are a good choice if one or more data nodes are down.
+<dt>Solution 2</dt><dd><p>If you need CMIP data, enable the checkbox “Show All Replicas”. The most important part of the CMIP data, the output1 data, have been replicated. Replicas are exact copies and they are a good alternative if one or more data nodes are down (check the nodes status <a class="reference external" href="https://esgf-node.llnl.gov/status/">here</a>).
 Especially now, in the phase of redeployment after ESGF overhaul, many data nodes are still down. The bitstreams of replica and master copy are identical if the number or date of the version is the same.</p>
 </dd>
 </dl>
 </li>
 <li><dl class="simple">
-<dt>Solution 4</dt><dd><p>Look into the errata of the project whether the data you need are withdrawn. As part of the <a class="reference external" href="https://es-doc.org/">ES-DOC</a> documentation ecosystem, the ESGF Errata Service centralizes timely information about known issues of ESGF data. Please, visit the <a class="reference external" href="https://es-doc.github.io/esdoc-errata-client/index.html">docs</a> about how to look up or report an issue.</p>
+<dt>Solution 3</dt><dd><p>Look into the errata of the project whether the data you need are withdrawn. As part of the <a class="reference external" href="https://es-doc.org/">ES-DOC</a> documentation ecosystem, the ESGF Errata Service centralizes timely information about known issues of ESGF data. Please, visit the <a class="reference external" href="https://es-doc.github.io/esdoc-errata-client/index.html">docs</a> about how to look up or report an issue.</p>
 </dd>
 </dl>
 </li>
 <li><dl class="simple">
-<dt>Solution 5</dt><dd><p>Not all variables, times, altitude levels have been archived for all time frequencies and experiments. For example, CMIP5 RCP daily time series are only available for the years 2006-2100, 2181-2200, and 2281-2300.
-Which CMIP5 data have been required for which time frequency and experiment is tabulated in the <a class="reference external" href="https://pcmdi.llnl.gov/mips/cmip5/docs/standard_output.pdf">CMIP5 Standard Output document</a>.</p>
+<dt>Solution 4</dt><dd><p>Not all variables, times, altitude levels have been archived for all time frequencies and experiments. For example, CMIP5 RCP daily time series are only available for the years 2006-2100, 2181-2200, and 2281-2300.
+Which CMIP5 data have been required to the modeling groups for which time frequency and experiment is tabulated in the <a class="reference external" href="https://pcmdi.llnl.gov/mips/cmip5/docs/standard_output.pdf">CMIP5 Standard Output document</a>. For CMIP6, see the <a class="reference external" href="http://clipc-services.ceda.ac.uk/dreq/index.html">CMIP6 Data Request</a>. For CORDEX, see the <a class="reference external" href="http://is-enes-data.github.io/CORDEX_variables_requirement_table.pdf">Requested Variables</a>.</p>
 </dd>
 </dl>
 </li>
 <li><dl class="simple">
-<dt>Solution 6</dt><dd><p>In case a portal has technical problems, try another ESGF portal</p>
+<dt>Solution 5</dt><dd><p>In case a portal has technical problems, try another ESGF portal, find the list of portals, (also called index nodes or CoG nodes), <a class="reference external" href="https://esgf.llnl.gov/nodes.html">here</a></p>
 </dd>
 </dl>
 </li>
 <li><dl class="simple">
-<dt>Solution 7</dt><dd><p>Seldom metadata have not properly been overtaken from a data node. In this case circumvent portals and try finding data on the data nodes directly. With help of the usual ESGF Search, find out which model simulations have been stored on which data node. Go to the THREDDS catalog of that data node and use the download links there.</p>
+<dt>Solution 6</dt><dd><p>Seldom metadata have not properly been overtaken from a data node. In this case circumvent portals and try finding data on the data nodes directly. With help of the usual ESGF Search, find out which model simulations have been stored on which data node. Go to the THREDDS catalog of that data node and use the download links there.</p>
 </dd>
 </dl>
 </li>
@@ -2303,7 +2291,7 @@ This service may especially be useful for scientists who cannot download data fr
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="user_guide.html" class="btn btn-neutral float-left" title="User Tutorials" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="videos.html" class="btn btn-neutral float-right" title="ESGF Video Tutorials" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="metagrid.html" class="btn btn-neutral float-right" title="Metagrid (Beta): Introduction/FAQ" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
