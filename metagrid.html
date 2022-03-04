@@ -107,14 +107,14 @@
 <li><p><strong>Mobile Devices</strong>:  Metagrid cannot render on a mobile device: the search results are collapsed in the small sized window.</p></li>
 <li><p><strong>Edge Browser for Windows</strong>: (<em>Tested witn Windows 10</em>)  Metagrid is incompatible with the Edge browser</p></li>
 <li><p><strong>Long Facet Value Strings</strong>:  Some values within the search facets, for example several <em>source_id</em> under <em>UofMD..</em> on the <em>input4MIPs</em> search are longer than the field permits and are truncated with elipses (…) characters without a means to display the full value string.</p></li>
-<li><p><strong>License info</strong>: Under the “Citation” pane for each search result, the <em>License</em> info for the data set is not displayed/</p></li>
+<li><p><strong>License info</strong>: Under the “Citation” pane for each search result, the <em>License</em> info for the data set is not displayed.</p></li>
 </ul>
 </section>
 <section id="metagrid-faq">
 <h2>Metagrid FAQ<a class="headerlink" href="#metagrid-faq" title="Permalink to this headline">¶</a></h2>
 <section id="general">
 <h3>General<a class="headerlink" href="#general" title="Permalink to this headline">¶</a></h3>
-<p>Q: Where should I start with getting to know the Metagrid user interface?  I’m fairly new to ESGF and this all seems so unfamiliar</p>
+<p>Q: Where should I start with getting to know the Metagrid user interface?  I’m fairly new to ESGF and this interface, search results seems rather unfamiliar.</p>
 <p>A: If you are unfamiliar with the interface, you may want to take a tour.  Click on the Blue Question Mark icon in lower right corner of the page, then click on the available tour for your current page.</p>
 <p>Q: I would like to share some feedback of Metagrid.  Is there an easy way to do so?</p>
 <p>A: We have integrated HotJar into Metagrid to collect feedback.  Locate the gray tab in the lower-right corner of the page.  The HotJar popup window will ask a series of questions. The freetext answer fields are optional so can be skipped with the “Skip” link, but answers to the questions on a scale of 0-10 are required to complete the short survey.</p>
@@ -123,8 +123,8 @@
 <div><img alt="_images/Metagrid-shot.png" src="_images/Metagrid-shot.png" />
 </div></blockquote>
 <p>Q: How can I find Cordex data. It is not listed under projects.</p>
-<p>A: For the time being Cordex data can be found under the last listed project All (except CMIP6)</p>
-<p>Q: Why exclude CMIP6 from all other projects</p>
+<p>A: For the time being Cordex data can be found under the last listed project All (except CMIP6).  A search view for Cordex is coming soon.</p>
+<p>Q: Why exclude CMIP6 from all other projects?</p>
 <p>A: CMIP6 introduced a different naming convention for several of the properties of the datasets in our search database, such as the model and experiment.  As we have been unable to reconcile the old and new conventions trivially, instead we provide results on separate pages.
 We realize this may pose an inconvenince to comparing data between older project data.</p>
 </section>
@@ -133,6 +133,10 @@ We realize this may pose an inconvenince to comparing data between older project
 <p>Q:  How do I include/exclude replicas in my search and search for old versions?</p>
 <p>A:  The search selection <em>Dropdowms to toggle replicas and versions (latest or all) is under the **Additional Properties*</em> tab of the Faceted search bar on the left.
 Additionally, the search selectors for <strong>Version Date Range</strong> are located in this tab.</p>
+<p>Q: Why do I see multiple instances of the same search results?</p>
+<p>A: Some datasets have replica copies published at additional sites.  (See <em>replicas</em> above) You can toggle replicas off and see only a single result.  Additionally, it might be advantageous to download a replica instead of the original, for instance the original data node might report being offline, or you are aware of geographical proximity to the host node, eg. North America, Europe or Asia.  You may use the <code class="docutils literal notranslate"><span class="pre">Data</span> <span class="pre">Node</span></code> search facet to select a node, each listed by the domain name with the reported status indicator.</p>
+<p>Q: What can I do if there are no files for a particular dataset?  Is this an error?</p>
+<p>A:  Yes its likely this was due to an error in “publication” where we populate the file records for datasets.  First, modify your search to see if there is a more recent version of the data set available or a replica may have the files correctly published.  If that does not yield files for the dataset, then please contact support so the appropriate data managers can investigate the issue.</p>
 </section>
 <section id="user-accounts">
 <h3>User accounts<a class="headerlink" href="#user-accounts" title="Permalink to this headline">¶</a></h3>
