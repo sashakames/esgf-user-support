@@ -15,15 +15,13 @@ Several new features
 
 In addition, Metagrid addresses a long-standing issue that has impacted the CoG web frontend's ability to deliver the "Wget Script".  Download of the script with specific browser versions would produce a script with incorrect files.  To our knowledge this is no longer an issue for Metagrid.
 
-Metagrid awaits your feedback.  Please give this interface a try for your ESGF data discovery needs.
 
 Known Issues
 ------------
 
+* **Globus destination endpoints**:  Managed mapped endpoints cannot be used and some institutions provide these.  We are developing a solution to this issue.
 * **Mobile Devices**:  Metagrid cannot render on a mobile device: the search results are collapsed in the small sized window.
 * **Edge Browser for Windows**: (*Tested witn Windows 10*)  Metagrid is incompatible with the Edge browser
-* **Sign out**:  When signing out, an *Error* page appears with the text "We are sorry...  Invalid parameter: redirect_uri".  In this case, the sign out did in fact success, please use the browser's **back** button to return to Metagrid.
-
 
 Metagrid FAQ
 ------------
@@ -79,7 +77,7 @@ User accounts
 
 Q:  Can I use my existing ESGF account?
 
-A:  Existing ESGF accounts are not compatible with Metagrid.  For now, *test* accounts are available.  You have the option to create a test account at the CEDA server or use credentials from GitHUb or your ORCID
+A:  Existing ESGF accounts are not compatible with Metagrid.  Note that LLNL has retired its old OpenID server and now supports Metagrid logins using Globus.
 
 Downloads
 *********
