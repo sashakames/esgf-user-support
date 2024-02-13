@@ -22,7 +22,6 @@ In addition, Metagrid addresses a long-standing issue that has impacted the CoG 
 Known Issues
 ------------
 
-* **Globus destination endpoints**:  Managed mapped endpoints cannot be used and some institutions provide these.  We are developing a solution to this issue.
 * **Mobile Devices**:  Metagrid cannot render on a mobile device: the search results are collapsed in the small sized window.
 * **Edge Browser for Windows**: (*Tested witn Windows 10*)  Metagrid is incompatible with the Edge browser
 * **Globus Transfers to Managed Endpoints**: Some Institutions have deployed managed Globus Connect Endpoints.  We are working on a solution to allow transfers to these endpoints, but in the meantime, transfer tasks will fail to submit to some endpoints.
